@@ -66,6 +66,7 @@ def display_page(raw_page_img, page_layout):
     page_img = make_open_cv_img(page_png_stream)
     for box in page_layout._objs[:-1]:
         lr, ul = get_bbox_tuple(box, y_height)
+        print box.get_text()
         cv2.rectangle(page_img, ul, lr, color=random_color(), thickness=2)
     display(Image.fromarray(page_img, 'RGB'))
 
