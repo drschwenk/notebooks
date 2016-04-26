@@ -14,8 +14,12 @@ from pdfminer.layout import LAParams
 from pdfminer.converter import PDFPageAggregator
 
 
-def make_page_layouts(pdf_file, page_range):
-    laparams = LAParams()
+def make_page_layouts(pdf_file, page_range, line_overlap,
+                      char_margin,
+                      line_margin,
+                      word_margin,
+                      boxes_flow):
+    laparams = LAParams(line_overlap, char_margin, line_margin, word_margin, boxes_flow)
     page_layouts = []
     with open(pdf_file, 'r') as fp:
         parser = PDFParser(fp)
@@ -64,22 +68,32 @@ def get_bbox_tuple(box, y_height):
 def display_page(raw_page_img, page_layout):
     page_png_stream, y_height = make_png_stream(raw_page_img)
     page_img = make_open_cv_img(page_png_stream)
-    for box in page_layout._objs[:-1]:
+    for box in page_layout._objs:
         lr, ul = get_bbox_tuple(box, y_height)
-        print box.get_text()
+        try:
+            pass
+            # print box.get_text()
+        except AttributeError:
+            pass
         cv2.rectangle(page_img, ul, lr, color=random_color(), thickness=2)
     display(Image.fromarray(page_img, 'RGB'))
 
 
-def draw_pdf_with_boxes(book_file, page_range):
+def draw_pdf_with_boxes(book_file, page_range, word_margin=0.1, line_overlap=0.5, char_margin=2.0,
+                        line_margin=0.5, boxes_flow=0.5):
     if page_range:
         page_range = map(lambda x: x - 1, page_range)
         suffix = '[{}-{}]'.format(page_range[0], page_range[1])
-        raw_multi_pdf = WImage(filename= book_file + suffix)
+        raw_multi_pdf = WImage(filename=book_file + suffix)
     else:
-        raw_multi_pdf = WImage(filename= book_file)
+        raw_multi_pdf = WImage(filename=book_file)
         
-    doc_page_layouts = make_page_layouts(book_file, page_range)
+    doc_page_layouts = make_page_layouts(book_file, page_range,
+                                         line_overlap,
+                                         char_margin,
+                                         line_margin,
+                                         word_margin,
+                                         boxes_flow)
     page_images = raw_multi_pdf.sequence
     for page_n in range(len(page_images)):
         display_page(page_images[page_n], doc_page_layouts[page_n])
