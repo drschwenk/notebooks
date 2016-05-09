@@ -1,0 +1,298 @@
+{
+  "detections": [
+    {
+      "value": "Day Weekly Question Day Weekly Question How does a thermos work?",
+      "rectangle": [
+        {
+          "y": 362,
+          "x": 199
+        },
+        {
+          "y": 522,
+          "x": 1708
+        }
+      ],
+      "score": 0.75
+    },
+    {
+      "value": "scieoe ainy scien Big Idea 5",
+      "rectangle": [
+        {
+          "y": 135,
+          "x": 1980
+        },
+        {
+          "y": 464,
+          "x": 2259
+        }
+      ],
+      "score": 0.75
+    },
+    {
+      "value": "1.",
+      "rectangle": [
+        {
+          "y": 2295,
+          "x": 303
+        },
+        {
+          "y": 2333,
+          "x": 340
+        }
+      ],
+      "score": 1
+    },
+    {
+      "value": "2.",
+      "rectangle": [
+        {
+          "y": 2419,
+          "x": 303
+        },
+        {
+          "y": 2457,
+          "x": 343
+        }
+      ],
+      "score": 1
+    },
+    {
+      "value": "Name",
+      "rectangle": [
+        {
+          "y": 212,
+          "x": 147
+        },
+        {
+          "y": 255,
+          "x": 259
+        }
+      ],
+      "score": 1
+    },
+    {
+      "value": "One way to slow down the transfer of heat between objects is to keep them separated. This stops heat transfer by conduction, which requires that objects physically touch each other for heat to flow from one to the other. A second way to slow conduction is by the use of insulators. Materials such as plastic, wood, and fabric are poor conductors of heat and therefore make good insulators. Air can work as an insulator as well. For example, Styrofoam® cups have tiny air pockets in the foam that keep heat from moving out or in A thermos is basically a bottle inside a bottle that limits heat conduction in both ways through the use of insulators and physical separation. The inner bottle, which is where you put your hot or cold drink has little contact with the outside. The only places where heat can travel are through the thermos cap and at points where the inner and outer walls of the bottles meet. And to further reduce heat conduction, these parts of the thermos are made from insulators.",
+      "rectangle": [
+        {
+          "y": 651,
+          "x": 146
+        },
+        {
+          "y": 2053,
+          "x": 1806
+        }
+      ],
+      "score": 0.75
+    },
+    {
+      "value": "WEEK 4",
+      "rectangle": [
+        {
+          "y": 731,
+          "x": 2000
+        },
+        {
+          "y": 782,
+          "x": 2242
+        }
+      ],
+      "score": 1
+    },
+    {
+      "value": "Vocabulary insulator -suh-lay-ter material that is a poor conductor of heat",
+      "rectangle": [
+        {
+          "y": 978,
+          "x": 1913
+        },
+        {
+          "y": 1341,
+          "x": 2238
+        }
+      ],
+      "score": 0.75
+    },
+    {
+      "value": "E",
+      "rectangle": [
+        {
+          "y": 1069,
+          "x": 1851
+        },
+        {
+          "y": 1110,
+          "x": 1860
+        }
+      ],
+      "score": 1
+    },
+    {
+      "value": "cup",
+      "rectangle": [
+        {
+          "y": 1284,
+          "x": 1297
+        },
+        {
+          "y": 1328,
+          "x": 1380
+        }
+      ],
+      "score": 1
+    },
+    {
+      "value": "cap",
+      "rectangle": [
+        {
+          "y": 1417,
+          "x": 1305
+        },
+        {
+          "y": 1456,
+          "x": 1394
+        }
+      ],
+      "score": 1
+    },
+    {
+      "value": "Outer wall",
+      "rectangle": [
+        {
+          "y": 1585,
+          "x": 1818
+        },
+        {
+          "y": 1632,
+          "x": 2034
+        }
+      ],
+      "score": 1
+    },
+    {
+      "value": "inner wall",
+      "rectangle": [
+        {
+          "y": 1778,
+          "x": 1795
+        },
+        {
+          "y": 1819,
+          "x": 2025
+        }
+      ],
+      "score": 1
+    },
+    {
+      "value": "nsulator",
+      "rectangle": [
+        {
+          "y": 1929,
+          "x": 1824
+        },
+        {
+          "y": 1964,
+          "x": 2005
+        }
+      ],
+      "score": 1
+    },
+    {
+      "value": "A. List the two ways a thermos bottle slows heat transfer by conduction.",
+      "rectangle": [
+        {
+          "y": 2157,
+          "x": 221
+        },
+        {
+          "y": 2219,
+          "x": 2008
+        }
+      ],
+      "score": 1
+    },
+    {
+      "value": "B. If you were designing a pot to cook spaghetti in, which parts would you make from good conductors of heat? Which parts would you make from insulators? Explain your answer",
+      "rectangle": [
+        {
+          "y": 2557,
+          "x": 233
+        },
+        {
+          "y": 2767,
+          "x": 2073
+        }
+      ],
+      "score": 0.75
+    },
+    {
+      "value": "Daily Science EMC 5015",
+      "rectangle": [
+        {
+          "y": 3134,
+          "x": 1500
+        },
+        {
+          "y": 3178,
+          "x": 1932
+        }
+      ],
+      "score": 1
+    },
+    {
+      "value": "Evan-Moor Corp.",
+      "rectangle": [
+        {
+          "y": 3134,
+          "x": 2006
+        },
+        {
+          "y": 3178,
+          "x": 2293
+        }
+      ],
+      "score": 1
+    },
+    {
+      "value": "148",
+      "rectangle": [
+        {
+          "y": 3136,
+          "x": 154
+        },
+        {
+          "y": 3185,
+          "x": 232
+        }
+      ],
+      "score": 1
+    },
+    {
+      "value": "Big Idea 55",
+      "rectangle": [
+        {
+          "y": 3136,
+          "x": 282
+        },
+        {
+          "y": 3185,
+          "x": 466
+        }
+      ],
+      "score": 1
+    },
+    {
+      "value": "Week 4",
+      "rectangle": [
+        {
+          "y": 3136,
+          "x": 525
+        },
+        {
+          "y": 3185,
+          "x": 642
+        }
+      ],
+      "score": 1
+    }
+  ]
+}
