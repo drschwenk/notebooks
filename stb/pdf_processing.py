@@ -97,5 +97,3 @@ def draw_pdf_with_boxes(book_file, page_range, word_margin=0.1, line_overlap=0.5
     page_images = raw_multi_pdf.sequence
     for page_n in range(len(page_images)):
         display_page(page_images[page_n], doc_page_layouts[page_n])
-
-def write_images(doc_page_):
