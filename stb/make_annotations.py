@@ -8,5 +8,5 @@ with open('pdfs/page_ranges.csv') as f:
     ranges = f.readlines()
 range_lookup = {line.split(' ')[0]:[int(num) for num in line.strip().split(' ')[1:]] for line in ranges}
 
-for tbt in book_breakdowns['daily_sci'][3:4]:
+for tbt in book_breakdowns['daily_sci'][-1:]:
     pdfextraction.ocr_pipeline.perform_ocr(tbt, 'annotations', range_lookup[tbt])
