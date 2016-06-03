@@ -20,5 +20,5 @@ range_lookup = {line.split(' ')[0]:[int(num) for num in line.strip().split(' ')[
     # print(tbt)
 print(book_breakdowns['misc'])
 manual_book = 'The_New_Childrens_Encyclopedia_DK_Publishing.pdf'
-pdfextraction.ocr_pipeline.perform_ocr(manual_book, 'annotations', range_lookup[book_breakdowns['misc'][0]])
+pdfextraction.ocr_pipeline.perform_ocr(manual_book:, 'annotations', range_lookup[book_breakdowns['misc'][0]])
 
