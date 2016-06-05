@@ -197,3 +197,27 @@ book_breakdowns, page_ranges = load_book_info()
 dest_path = './ai2-vision-turk-data/textbook-annotation-test/merged-annotations/'
 for textbook in book_breakdowns['daily_sci'][1:]:
     merging_tool.merge_single_book(textbook, page_ranges[textbook], dest_path, merge_params)
+"""
+
+
+Best yet, catches many offset lines caused by OCR false negatives
+
+
+
+"""
+merge_params = {
+    'near_x': 3.0,
+    'near_y': 3.0,
+    'overlap_x': 0.8,
+    'overlap_y': 0.6,
+    'start_x': 5.0,
+    'short_length': 1,
+    'char_size_ratio': 0.4,
+    'starting_near_near_y': 5.0,
+    'overlap_fract': 0.2
+}
+
+book_breakdowns, page_ranges = load_book_info()
+dest_path = './ai2-vision-turk-data/textbook-annotation-test/merged-annotations/'
+for textbook in book_breakdowns['daily_sci'][1:]:
+    merging_tool.merge_single_book(textbook, page_ranges[textbook], dest_path, merge_params)
