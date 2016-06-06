@@ -246,3 +246,27 @@ dest_path = './ai2-vision-turk-data/textbook-annotation-test/merged-annotations/
 # for textbook in book_breakdowns['daily_sci'] + book_breakdowns['spectrum_sci'] + book_breakdowns['read_und_sci'] + book_breakdowns['workbooks']:
 for textbook in book_breakdowns['daily_sci']:
     merging_tool.merge_single_book(textbook, page_ranges[textbook], dest_path, merge_params)
+"""
+
+
+Another tweak to lessen merging of blocks with similar starting x-coords
+
+
+
+"""
+merge_params = {
+    'near_x': 3.0,
+    'near_y': 2.0,
+    'overlap_x': 0.8,
+    'overlap_y': 0.6,
+    'start_x': 1.0,
+    'short_length': 1.0,
+    'char_size_ratio': 0.4,
+    'starting_near_near_y': 3.0,
+    'overlap_fract': 0.2
+}
+
+book_breakdowns, page_ranges = load_book_info()
+dest_path = './ai2-vision-turk-data/textbook-annotation-test/merged-annotations/'
+# for textbook in book_breakdowns['daily_sci'] + book_breakdowns['spectrum_sci'] + book_breakdowns['read_und_sci'] + book_breakdowns['workbooks']:
+for textbook in book_breakdowns['daily_sci']:    merging_tool.merge_single_book(textbook, page_ranges[textbook], dest_path, merge_params)
