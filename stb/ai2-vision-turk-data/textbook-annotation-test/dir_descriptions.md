@@ -40,7 +40,7 @@ Labeled annotations to split
 ##parsed-questions
 Question annotations with the hierarchy and labels programatically extracted.
 
-##single_worker_labeled_questions
+##individual-worker-results
 A place to store a individual worker hits for review
 
 ##smaller-page-images
