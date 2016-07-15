@@ -269,7 +269,7 @@ def make_results_df(raw_hit_results):
     return results_df
 
 
-def make_question_results_df(raw_hit_results):
+def make_shining_results_df(raw_hit_results):
     """
     similar to above with a new column for question group
     """
