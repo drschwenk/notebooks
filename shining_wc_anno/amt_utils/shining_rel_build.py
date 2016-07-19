@@ -36,7 +36,7 @@ def build_relationships(rel_dict):
 
 
 def append_to_annotations(base_dir, dest_dir, anno_file, new_annotations):
-    with open (base_dir + anno_file) as f:
+    with open(base_dir + anno_file) as f:
         base_anno = json.load(f)
         
     base_anno['relationships'] = new_annotations

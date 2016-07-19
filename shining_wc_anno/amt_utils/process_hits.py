@@ -342,7 +342,7 @@ def load_local_annotation(page_name, anno_dir):
     base_path = '/Users/schwenk/wrk/notebooks/stb/ai2-vision-turk-data/textbook-annotation-test/'
     file_path = base_path + anno_dir + page_name.replace('jpeg', 'json')
     try:
-        with open(file_path, 'r') as f:
+        with open(file_path, '/r') as f:
             local_annotations = json.load(f)
     except IOError as e:
         print e
