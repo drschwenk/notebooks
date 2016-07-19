@@ -1,5 +1,6 @@
 import json
 import ast
+import pandas as pd
 from collections import defaultdict
 
 
@@ -33,6 +34,13 @@ def build_relationships(rel_dict):
         if len(ordered_boxes) > 2:
             new_relationships[rel_id]['connector'] = ordered_boxes[1][1]
     return new_relationships
+
+
+def build_and_write_relationships(page_df, anno_dir, new_anno_dir):
+    anno_file_name = pd.unique(page_df['page'])[0] + '.json'
+    rel_dict = build_relationship_dict(page_df)
+    rel_to_add = build_relationships(rel_dict)
+    append_to_annotations(anno_dir, new_anno_dir, anno_file_name ,rel_to_add)
 
 
 def append_to_annotations(base_dir, dest_dir, anno_file, new_annotations):
