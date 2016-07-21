@@ -1,0 +1,12 @@
+g1
+	The first 8 images we did as a group
+	78- repeated arrow click in linkage
+	72- missed save key press
+	65- missed save key press
+	64- missed save key press
+	63- missed save key press
+
+	I've manually corrected these in verified annotations
+g2
+
+
