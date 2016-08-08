@@ -8,5 +8,5 @@ g1
 
 	I've manually corrected these in verified annotations
 g2
-
+~ 92 of the easier diagrams
 
